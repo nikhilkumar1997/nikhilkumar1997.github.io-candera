@@ -3,9 +3,9 @@
     font-family: open sans, sans-serif;
 }
 
-body {
-    max-width: 1220px;
-    margin: auto;
+.body {
+    margin: 0px;
+    border: 2px solid black;
 }
 
 .head1,
@@ -15,7 +15,6 @@ body {
     justify-content: space-between;
     color: #716f6f;
     padding: 2rem 0;
-   
 }
 
 .icons p {
@@ -112,12 +111,12 @@ a {
 }
 
 .gridcontainer img {
-    width: 275px;
+    width: 100%;
     height: auto;
 }
 
 .gridcontainer1 img {
-    width: 365px;
+    width: 100%;
     height: auto;
 }
 
@@ -242,6 +241,12 @@ a {
     padding: 30px;
     max-width: 1220px;
     margin: auto;
+    position: relative;
+}
+
+.gridcontainer4 img {
+    width: 100%;
+    height: auto;
 }
 
 .caption {
@@ -302,7 +307,7 @@ a {
 }
 
 .owl-carousel-container {
-    width: 100%;
+    width: 90%;
     display: flex;
     background-color: #f9f8f9;
     position: relative;
@@ -340,21 +345,22 @@ a {
 }
 
 .owl-prev {
-    width: 65px;
+    width: 20px;
     height: 100px;
     position: absolute;
-    top: 0%;
+    top: 20%;
+    left: 5%;
     margin-left: -20px;
     display: block !important;
     background-color: #fff !important;
 }
 
 .owl-next {
-    width: 65px;
+    width: 20px;
     height: 100px;
     position: absolute;
-    top: 0%;
-    right: 0px;
+    top: 20%;
+    right: -25px;
     display: block !important;
     background-color: #fff !important;
 }
@@ -362,7 +368,7 @@ a {
 .owl-prev i,
 .owl-next i {
     color: #000;
-    font-size: 5rem;
+    font-size: 1rem;
 }
 
 .heading4 {
@@ -371,6 +377,11 @@ a {
 
 .icons4 {
     margin-left: 100px;
+}
+
+.footer1 {
+    max-width: 1220px;
+    margin: auto;
 }
 
 .footer2 {
@@ -426,7 +437,7 @@ a {
     clear: both;
 }
 
-@media (max-width:600px) {
+@media screen and (max-width:800px) {
     .phno {
         display: none;
     }
@@ -443,6 +454,7 @@ a {
         display: flex;
         flex-direction: column;
         padding: 20px;
+        margin: auto;
     }
     .links {
         justify-content: center;
@@ -451,11 +463,13 @@ a {
         display: flex;
         flex-direction: column;
         padding: 20px;
+        margin: auto;
     }
     .gridcontainer3 {
         display: flex;
         flex-direction: column;
         padding: 20px;
+        margin: auto;
     }
     .text2 {
         display: block;
@@ -465,9 +479,11 @@ a {
         flex-direction: column;
         padding: 40px;
         justify-content: center;
+        margin: auto;
     }
     .gridcontainer4 {
         display: block;
+        margin: auto;
     }
     .container30 img {
         margin-left: 0;
@@ -483,5 +499,8 @@ a {
     }
     .payment4 {
         display: none;
+    }
+    .wrapper {
+        grid-gap: 0%;
     }
 }
